@@ -30,11 +30,11 @@ var connectRoute = require('./routes/');
 //   client.connect();
  
 const { Client } = require("cassandra-driver");
-const path ="C:\Users\devik\Downloads\secure-connect-test-cassandra.zip";
+const cassandrapath ="C:\Users\devik\Downloads\secure-connect-test-cassandra";
 async function run() {
    const client = new Client({
       cloud: {
-      secureConnectBundle: "path",
+      secureConnectBundle: cassandrapath,
       },
       credentials: {
       username: config.username,

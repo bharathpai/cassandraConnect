@@ -11,7 +11,7 @@ var usersRouter = require('./routes/users');
 var connectRoute = require('./routes/');
 
 // cassandra connection start
-// const config={username:'cassandra',password:'cassandra',contactPoint:'13.112.103.84',localDataCenter:'',keyspace:'',port:9042}
+const config={username:'cassandra',password:'cassandra',contactPoint:'13.112.103.84',localDataCenter:'',keyspace:'',port:9042}
 // let authProvider = new cassandra.auth.PlainTextAuthProvider(
 //     config.username,
 //     config.password
